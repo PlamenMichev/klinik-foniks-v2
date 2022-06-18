@@ -1,0 +1,96 @@
+main {
+    
+    margin-top: 50px;
+}
+
+h1 {
+    font-weight: 700;
+    font-family: 'Alegreya', sans-serif;
+    font-size: 35px;
+    color: #A5AA48;
+    text-align: center;
+}
+
+h4 {
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    color: #554A5B;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #554A5B;
+}
+
+button {
+    background-color: #739482;
+    color: #FFFCF4;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    width: 200px;
+    height: 56px;
+    border-radius: 30px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+}
+
+button > a > p {
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+button > a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+}
+
+.service-section > div {
+    margin-left: 30px;
+}
+
+.service-section {
+    display: flex;
+    margin: 0 auto;
+    width: 80vw;
+    margin-bottom: 100px;
+}
+
+img {
+    height: 100%;
+}
+
+button > a > img {
+    height: 30px;
+}
+
+.filters {
+    color: #546F60;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    width: 80vw;
+    margin: 30px auto;
+    cursor: pointer;
+}
+
+.filters > span {
+    margin-right: 6px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .service-section {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,110 @@
+h1 {
+    color: #A5AA48;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Alegreya', sans-serif;
+    text-align: center;
+}
+
+/* Button styles */
+
+button {
+    background-color: #739482;
+    color: #FFFCF4;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    width: 200px;
+    height: 56px;
+    border-radius: 30px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-right: auto;
+}
+
+button > a > p {
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+button > a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px;
+}
+
+button > a > img {
+    height: 30px;
+}
+
+.client-section {
+    display: flex;
+    width: 80vw;
+    margin: 120px auto;
+}
+
+.client-section > .text {
+    margin-right: 40px;
+}
+
+.client-section:nth-of-type(2) {
+    flex-direction: row-reverse;
+}
+
+.client-section:nth-of-type(2) > .text {
+    margin-right: 0;
+    margin-left: 40px;
+}
+
+.client-section:nth-of-type(2) > .text > button {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.client-section > .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.client-section > .text > h3 {
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+
+}
+
+.client-section > .text > p {
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.client-section > img {
+    border: 24px solid #BFC37B;
+    border-radius: 40px;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .client-section {
+        flex-direction: column-reverse;
+    }
+
+    .client-section:nth-of-type(2) {
+        flex-direction: column-reverse;
+    }
+
+    .client-section > .text {
+        margin-right: 0;
+    }
+
+    .client-section:nth-of-type(2) > .text {
+        margin-left: 0;
+    }
+}

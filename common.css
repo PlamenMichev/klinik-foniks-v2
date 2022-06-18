@@ -1,0 +1,314 @@
+body { 
+    background-color: #FFFCF4;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Navigation */
+
+nav {
+    display: flex;
+    flex-direction: column;
+    position: sticky;
+    background-color: #FFFCF4;
+    top: 0;
+}
+
+nav > .main-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 49px 67px 0px 67px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #000000;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links > a {
+    font-family: 'Alegreya', sans-serif;
+    font-size: 15px;
+    color: #000000;
+    margin-right: 20px;
+    width: auto;
+    padding: 0;
+}
+
+.nav-links > a:last-of-type {
+    margin-right: 0;
+}
+
+.logo {
+    font-family: 'Alegreya', sans-serif;
+    font-size: 20px;
+}
+
+.logo > a {
+    color: #000000;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-image {
+    margin: -85px auto auto;;
+}
+
+.language-image {
+    width: 24px;
+    height: 15px;
+    position: fixed;
+    right: 67px;
+    top: 20px;
+}
+
+/* Footer */
+
+footer {
+    margin-top: 35px;
+    display: flex;
+    align-items: stretch;
+    padding: 18px 70px;
+    background-color: #423549;
+}
+
+footer > .logo-section {
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #FFFCF4;
+    width: 40%;
+    min-height: 90%;
+}
+
+footer > .logo-section > div > .info > p {
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #FFFCF4;
+}
+
+footer > .logo-section > img {
+    margin-right: 40px;
+    height: 168px;
+    width: 168px;
+}
+
+footer > .logo-section > div > .info:first-of-type {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+footer > .logo-section > div > .info > h4 {
+    font-family: 'Alegreya', sans-serif;
+    font-size: 20px;
+    color: #FFFCF4;
+    margin: 0;
+}
+
+footer > .logo-section > div > .info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+footer > .logo-section > div > .info > span {
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #FFFCF4;
+}
+
+footer > .logo-section > div > .info > img {
+    margin-right: 11px;
+    height: 20px;
+    width: 20px;
+}
+
+footer > .info-section {
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #FFFCF4;
+    width: 35%;
+    align-items: center;
+}
+
+footer > .info-section > h6 {
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #FFFCF4;
+}
+
+footer > .info-section a {
+    padding: 0;
+}
+
+footer > .info-section > .row2 {
+    display: flex;
+}
+
+footer > .info-section > .row2 > a:first-of-type {
+    margin-right: 30px;
+}
+
+footer > .some-section > h6 {
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+    color: #FFFCF4;
+}
+
+footer > .some-section {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+
+footer > .some-section > div > a {
+    display: inline;
+    padding: 0;
+} 
+
+footer > .some-section > div > a:first-of-type {
+    margin-right: 25px;
+}
+
+.animate-rotate {
+    animation: rotation 7s linear infinite;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #E6EB8B;
+    margin: auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  
+@media only screen and (max-width: 600px) {
+    body {
+        margin-top: 40px;
+    }
+    nav {
+        height: 100vh;
+        flex-direction: column;
+        overflow: hidden;
+        transition: height .5s ease-out;
+        z-index: 2000;
+    }
+
+
+    .nav-hidden {
+        height: 0vh;
+        transition: height .5s ease-out;
+    }
+
+    nav > .main-content {
+        border-bottom: 0;
+        margin: 0;
+        flex-direction: column;
+        margin-top: 65px;
+    }
+
+    .nav-image {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    .nav-links > a {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+
+    .logo {
+        margin-bottom: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    footer > .logo-section {
+        flex-direction: column;
+    }
+
+    footer > * {
+        width: 90% !important;
+        margin: 0 auto;
+        border-right: 0px !important;
+    }
+
+    footer > .logo-section > img {
+        margin: auto;
+    }
+
+    footer > .logo-section > div > .info {
+        justify-content: center;
+    }
+
+    footer > .logo-section > div > .info:first-of-type {
+        align-items: center;
+    }
+
+    footer > .some-section {
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+}

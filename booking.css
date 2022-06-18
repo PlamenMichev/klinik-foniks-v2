@@ -1,0 +1,202 @@
+body {
+    background-image: url('./assets/images/calendar-background.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 48px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Calendar  */
+
+.calendar {
+    width: 80%;
+    margin: 30px auto;
+    row-gap: 10px;
+    column-gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+    padding: 10px;
+}
+
+.date {
+   height: 118px;
+   width: 100%;
+   background-color: #A5AA48;
+   font-weight: 700;
+   font-family: 'Inter', sans-serif;
+   font-size: 24px;
+   padding: 10px;
+   border-radius: 20px;
+   color: #fff;
+}
+
+.day-name {
+    color: #554A5B;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+}
+
+.day.active {
+    background-color: #E6EB8B;
+}
+
+.time {
+    height: 15px;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    background-color: #EAE6E6;
+    border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+}
+
+/* Button */
+
+
+button {
+    background-color: #739482;
+    color: #FFFCF4;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    height: 56px;
+    border-radius: 30px;
+    grid-column: span 2;
+    width: 100%;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: auto;
+    margin-right: auto;
+    cursor: pointer;
+    padding: 0px 20px;
+}
+
+button >  p {
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: white;
+}
+
+button > img {
+    height: 20px;
+}
+
+button.disabled {
+    background-color: gray;
+    cursor: default;
+}
+
+/* Modal content */
+
+.first-stage {
+    width: 70%;
+    justify-content: center;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.stage > h3 {
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    text-align: center;
+    color: #554A5B;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.stage > h4 {
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    color: #423549;
+
+}
+
+.stage > input {
+    background-color: #FFFFFF;
+    height: 53px;
+    color: #9F9F9F;
+    width: 500px;
+    border-radius: 20px;
+    font-size: 36px;
+    border: 0;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.stage > p {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #000000;
+    margin-top: -20px;
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.stage > button {
+    border-radius: 20px;
+    background-color: #554A5B;
+    height: 74px;
+    width: 387px;
+    font-size: 40px;
+    font-weight: 700;
+    font-family: 'Inter', sans-serif;
+    color: '#FFFEFE';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.second-stage {
+    display: none;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 500px;
+    align-items: center;
+}
+
+.second-stage > img {
+    position: absolute;
+    top: 30%;
+    right: 20%;
+}
+
+.second-stage > h5 {
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    color: #554A5B;
+    margin: 0;
+    margin-bottom: 50px;
+    width: 400px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #9F9F9F;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #9F9F9F;
+}
+  
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #9F9F9F;
+}

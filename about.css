@@ -1,0 +1,156 @@
+body {
+    background-image: url('./assets/images/about-body-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    color: #A5AA48;
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Alegreya', sans-serif;
+    margin: 0 0 40px 0;
+    text-align: center;
+}
+
+h2 {
+    color: #A5AA48;
+    font-size: 35px;
+    font-family: 'Alegreya', sans-serif;
+    margin: 0 0 20px 0;
+}
+
+.intro-description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #554A5B;
+    width: 450px;
+}
+
+.banner {
+    background-image: url('./assets/images/about-bg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 70vh;
+}
+
+.banner > div {
+    margin-left: 20%;
+    padding-top: 5%;
+}
+
+.video-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    width: 80%;
+    margin-bottom: 34px;
+}
+
+.video > video {
+    border-radius: 40px;
+    border: 24px solid #E6EB8B;
+    width: 100%;
+}
+
+.video-section > .text {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 100px;
+}
+
+.video-description {
+    width: 45%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #554A5B;
+}
+
+.certificates {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    row-gap: 50px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.certificates > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.certificates img {
+    width: 100%;
+    height: 100%;
+}
+
+.certificates > div > * {
+    max-width: 304px;
+    max-height: 462px;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    color: #554A5B;
+    width: 450px;
+    font-weight: 600;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .banner > div {
+        width: 89%;
+        margin: 30px auto;
+    }
+
+    .banner {
+        height: auto;
+    }
+
+    .intro-description {
+        width: auto;
+    }
+
+    h2 {
+        margin-top: 15px;
+        font-size: 27px;
+        margin: 0 0 32px 0;
+    }
+
+    .video > video {
+        border: 2px solid #E6EB8B;
+        border-radius: 20px;
+        width: 100%;
+    }
+
+    .video {
+        width: 90%
+    }
+
+    .video-description {
+        width: 90%;
+    }
+
+    .certificates > div {
+        flex-direction: column;
+        row-gap: 50px;
+        align-items: center;
+    }
+
+    .certificates > div > * {
+        max-width: none;
+        max-width: none;
+        width: auto;
+    }
+}

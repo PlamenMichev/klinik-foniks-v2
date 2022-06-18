@@ -1,0 +1,345 @@
+.header-banner {
+    background: url('./assets/images/banner-image.png');
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 100vh;
+    display: flex;
+}
+
+.header-banner > .content {
+    margin: auto 0px auto 20%;
+}
+
+.header-banner > .content > h1 {
+    font-weight: 700;
+    font-family: 'Alegreya', sans-serif;
+    font-size: 45px;
+    color: #554A5B;
+    margin-bottom: 23px;
+}
+
+.header-banner > .content > h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    width: 370px;
+    margin-bottom: 50px;
+    color: #000000;
+}
+
+.header-banner .content > button {
+    background-color: #739482;
+    color: #FFFCF4;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    width: 256px;
+    height: 56px;
+    border-radius: 30px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-banner > .content > button > a > img {
+    height: 30px;
+}
+
+/* Alternative medecine */
+
+.alternative-medicine {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.alternative-medicine > .text-content {
+    width: 40%;
+}
+
+.alternative-medicine > .image {
+    border: 1px solid #554A5B;
+    padding: 60px;
+    border-radius: 50%;
+    border: 1px solid #554A5B;
+    padding: 60px;
+    width: 251px;
+    border-radius: 50%;
+    height: 251px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.alternative-medicine > .text-content > h3 {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Alegreya', sans-serif;
+    color: #A5AA48;
+    width: 277px;
+    margin-bottom: 21px;
+} 
+
+.alternative-medicine > .text-content > h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 16px;
+} 
+
+.alternative-medicine > .text-content > p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 55px;
+    color: #554A5B;
+}
+
+.alternative-medicine > .text-content > button {
+    background-color: #739482;
+    color: #FFFCF4;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    width: 200px;
+    height: 56px;
+    border-radius: 30px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+.alternative-medicine > .text-content > button > a > img {
+    height: 30px;
+}
+
+
+  a {
+      color: inherit;
+      display: inherit;
+      align-items: inherit;
+      justify-content: inherit;
+      width: 100%;
+      padding: 0px 30px;
+  }
+
+  /* Services section */
+
+.services {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background: url('./assets/images/services-banner.png');
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 100vh;
+}
+
+.services > .services-wrapper {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.services > .labels {
+    margin: 35px auto;
+    width: 52%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 21px; 
+}
+
+.services > .labels > .service-label {
+    width: 215px;
+    height: 53px;
+    background-color: #739482;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    color: #fff;
+    cursor: default;
+}
+
+.services > .labels > .service-label:hover {
+    background-color: #fff;
+    color: #739482;
+}
+
+.services > .services-wrapper > div  {
+    background-color: #554A5B;
+    height: 1px;
+    width: 48%;
+}
+.services > .services-wrapper > img {
+    padding: 0 10px;
+}
+
+.services > h2 {
+    font-weight: 700;
+    font-family: 'Alegreya', sans-serif;
+    font-size: 35px;
+    color: #A5AA48;
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+/* Clients section */
+
+.client-button {
+    height: 40px !important;
+    width: 200px !important;
+}
+
+
+.clients {
+    margin-top: -100px;
+}
+
+.clients  > h2 {
+    font-weight: 700;
+    font-family: 'Alegreya', sans-serif;
+    font-size: 35px;
+    color: #A5AA48;
+    text-align: center;
+}
+
+.clients > .client > div > h3 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Alegreya', sans-serif;
+}
+
+
+.clients > .client > div > p {
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    width: 365px;
+}
+
+.clients > .second-client > div > p {
+    width: 500px;
+}
+
+.clients > .client > div > button {
+    background-color: #739482;
+    color: #FFFCF4;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    width: 200px;
+    height: 56px;
+    border-radius: 30px;
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.clients > .client > .first-client > div {
+    margin-left: 40%;
+    margin-top: 90px;
+}
+
+.clients > .client {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 315px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -85px;
+}
+
+.clients > .first-client {
+    background-image: url(./assets/images/first-client.png);
+}
+
+.clients > .first-client > div {
+    margin-left: 40%;
+    margin-top: 160px;
+}
+
+.clients > .second-client > div {
+    margin-left: 20%;
+    margin-top: 160px;
+}
+
+.clients > .second-client {
+    background-image: url(./assets/images/second-client.png);
+}
+
+.clients > .client > div > button > a > img {
+    height: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        overflow-x: hidden;
+    }
+    
+    .header-banner > .content > h2 {
+        width: auto;
+    }
+
+    .header-banner {
+        height: 71vh;
+    }
+
+    .header-banner > .content {
+        margin: auto;
+        padding: 14px;
+    }
+
+    .alternative-medicine {
+        margin-top: -100px;
+        flex-direction: column;
+    }
+
+    .alternative-medicine > .image {
+        padding: 27px;
+    }
+
+    .alternative-medicine > .text-content {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .services {
+        padding-top: 15px;
+    }
+
+    .services > .labels {
+        width: 75%;
+    }
+
+    .clients {
+        margin-top: 230px;
+    }
+
+    .clients > .client > div {
+        margin-left: 0;
+        margin-top: 0;
+        width: 90%;
+        margin: auto;
+        margin-top: 175px;
+    }
+
+    .clients > .first-client > div > h3 {
+        text-align: end;
+    }
+
+    .clients > .client > div > p {
+        width: auto;
+    }
+}
