@@ -5,6 +5,7 @@
     background-size: 100% auto;
     height: 100vh;
     display: flex;
+    position: relative;
 }
 
 .header-banner > .content {
@@ -44,6 +45,26 @@
 
 .header-banner > .content > button > a > img {
     height: 30px;
+}
+
+.header-banner > .names {
+    height: fit-content;
+    bottom: 0;
+    position: absolute;
+    right: 10%;
+}
+
+.header-banner > .names > h3 {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Alegreya', sans-serif;
+    margin: 0;
+}
+
+.header-banner > .names > h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    margin: 0;
 }
 
 /* Alternative medecine */
@@ -284,6 +305,22 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+    .header-banner > .names {
+        height: fit-content;
+        top: 65px;
+        position: absolute;
+        left: 5px;
+    }
+
+    .header-banner > .names > h3 {
+        font-size: 20px;
+    }
+
+    .header-banner > .names > h5 {
+        font-size: 18px;
+    }
+
     body {
         overflow-x: hidden;
     }

@@ -12,6 +12,12 @@ nav {
     position: sticky;
     background-color: #FFFCF4;
     top: 0;
+    z-index: 2000;
+}
+
+nav > .logo-link {
+    width: fit-content;
+    margin: auto;
 }
 
 nav > .main-content {
@@ -237,8 +243,9 @@ footer > .some-section > div > a:first-of-type {
     body {
         margin-top: 40px;
     }
+
     nav {
-        height: 100vh;
+        height: 0vh;
         flex-direction: column;
         overflow: hidden;
         transition: height .5s ease-out;
@@ -246,8 +253,8 @@ footer > .some-section > div > a:first-of-type {
     }
 
 
-    .nav-hidden {
-        height: 0vh;
+    .nav-visible {
+        height: 100vh;
         transition: height .5s ease-out;
     }
 

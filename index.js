@@ -1,7 +1,5 @@
 const navElement =  document.getElementsByTagName("nav")[0]
-navElement.style.display = 'none'
-navElement.classList.add('nav-hidden')
-navElement.style.display = 'flex'
+
 
 // Add nav controls for mobile
 if (document.documentElement.clientWidth < 600) {
@@ -18,14 +16,14 @@ if (document.documentElement.clientWidth < 600) {
   openCloseButton.style.backgroundSize = 'cover'
   
   openCloseButton.addEventListener('click', () => {
-    if (navElement.classList.contains('nav-hidden')) {
-      navElement.classList.remove('nav-hidden')
+    if (navElement.classList.contains('nav-visible')) {
+      navElement.classList.remove('nav-visible')
       document.body.style.overflowY = 'hidden'
-      openCloseButton.style.backgroundImage = 'url(\'../assets/images/close-icon.png\')'
-    } else {
-      navElement.classList.add('nav-hidden')
-      document.body.style.overflowY = 'auto'
       openCloseButton.style.backgroundImage = 'url(\'../assets/images/open-icon.png\')'
+    } else {
+      navElement.classList.add('nav-visible')
+      document.body.style.overflowY = 'auto'
+      openCloseButton.style.backgroundImage = 'url(\'../assets/images/close-icon.png\')'
     }
   })
 
@@ -101,22 +99,24 @@ document.getElementById('great-button').addEventListener('click', () => {
 // Start of Maddies part
 
 const videoElement = document.getElementById('hello-video')
+if (videoElement) {
 
-document.addEventListener('scroll', function (event) {
-  console.log(event)
-  var scrolled = document.scrollingElement.scrollTop + (190 * 2); // We add the height of the nav bar
-  var position = videoElement.offsetTop;
-
-  // TODO see when to stop video
-  if(scrolled > position){
-    // check if video is playing
-    // Ready state bigger than two means that the video has enough data to play
-    // https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/readyState
-    if (!(videoElement.currentTime > 0 && !videoElement.paused && !videoElement.ended && videoElement.readyState > 2)) {
-      videoElement.play()
-    }
-  } 
-});
+  document.addEventListener('scroll', function (event) {
+    console.log(event)
+    var scrolled = document.scrollingElement.scrollTop + (190 * 2); // We add the height of the nav bar
+    var position = videoElement.offsetTop;
+    
+    // TODO see when to stop video
+    if(scrolled > position && videoElement.currentTime === 0){
+      // check if video is playing
+      // Ready state bigger than two means that the video has enough data to play
+      // https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/readyState
+      if (!(videoElement.currentTime > 0 && !videoElement.paused && !videoElement.ended && videoElement.readyState > 2)) {
+        videoElement.play()
+      }
+    } 
+  });
+}
 
 
 // End of Maddies part

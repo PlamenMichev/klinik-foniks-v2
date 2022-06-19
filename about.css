@@ -20,6 +20,27 @@ h2 {
     margin: 0 0 20px 0;
 }
 
+.banner > .names {
+    height: fit-content;
+    bottom: -10%;
+    position: absolute;
+    right: 0;
+}
+
+.banner > .names > h3 {
+    font-size: 35px;
+    font-weight: 700;
+    font-family: 'Alegreya', sans-serif;
+    margin: 0;
+}
+
+.banner > .names > h5 {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    margin: 0;
+}
+
+
 .intro-description {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
@@ -32,6 +53,7 @@ h2 {
     background-size: contain;
     background-repeat: no-repeat;
     height: 70vh;
+    margin-bottom: 50px;
 }
 
 .banner > div {
@@ -112,6 +134,10 @@ h3 {
     .banner > div {
         width: 89%;
         margin: 30px auto;
+    }
+
+    .banner > .names {
+        position: relative;
     }
 
     .banner {
