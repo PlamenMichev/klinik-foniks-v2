@@ -102,19 +102,22 @@ const videoElement = document.getElementById('hello-video')
 if (videoElement) {
 
   document.addEventListener('scroll', function (event) {
-    console.log(event)
     var scrolled = document.scrollingElement.scrollTop + (190 * 2); // We add the height of the nav bar
     var position = videoElement.offsetTop;
     
     // TODO see when to stop video
-    if(scrolled > position && videoElement.currentTime === 0){
+    if(scrolled > position && scrolled < position + videoElement.offsetHeight && videoElement.currentTime === 0){
       // check if video is playing
+      console.log('play')
       // Ready state bigger than two means that the video has enough data to play
       // https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/readyState
       if (!(videoElement.currentTime > 0 && !videoElement.paused && !videoElement.ended && videoElement.readyState > 2)) {
         videoElement.play()
-      }
-    } 
+      } 
+    } else if (scrolled < position || scrolled > position + videoElement.offsetHeight) {
+      console.log('pauase')
+      videoElement.pause()
+    }
   });
 }
 
